@@ -1,17 +1,26 @@
 import './App.css';
 import React from 'react';
 import {BrowserRouter,Route, Routes} from 'react-router-dom';
-import AllPosts from './components/AllPosts';
-import OnePost from './components/OnePost'; 
+import Home from './components/Home';
+import About from './components/About';
+import SinglePost from './components/SinglePost';
+import Post from './components/Post';
+import Project from  './components/Project' ;
+import NavBar from './components/NavBar';
+
 
 function App() {
   return (
     
     <BrowserRouter>
+    <NavBar/>
       <div>
       <Routes>
-        <Route element={<AllPosts/>} path="/" exact/>
-        <Route element={<OnePost/>} path="/:slug"/>
+        <Route element={<Home/>} path="/" exact/>
+        <Route element={<About/>} path="/about"/>
+        <Route element={<SinglePost/>} path="/post/:slug"/>
+        <Route element={<Post/>} path="/post"/>
+        <Route element={<Project/>} path="/project"/>
       </Routes>
       </div>
     </BrowserRouter>
