@@ -13,7 +13,7 @@ const NavBar = () => {
                 Kaushik</NavLink>
                 <NavLink exact to="/post" className=" inline-flex items-center py-3 px-3 my-6 rounded text-blue-800 hover:text-green-800" activeclassName="text-red-100 bg-red-700">Blog Posts</NavLink>
                 <NavLink exact to="/project" className=" inline-flex items-center py-3 px-3 my-6 rounded text-blue-800 hover:text-green-800" activeclassName="text-red-100 bg-red-700">Projects</NavLink>
-                <NavLink exact to="/about" className=" inline-flex items-center py-3 px-3 my-6 rounded text-blue-800 hover:text-green-800" activeclassName="text-red-100 bg-red-700">About Me!</NavLink>
+                <NavLink exact to="/about" className=" inline-flex items-center py-3 px-3 my-6 rounded text-blue-800 hover:text-green-800" activeclassName="text-red-100 bg-red-700">About Me!!</NavLink>
             </nav>
 
             <div className='inline-flex px-3 py-3 my-6'>
