@@ -8,12 +8,19 @@ import Post from './components/Post';
 import Project from  './components/Project' ;
 import NavBar from './components/NavBar';
 
+import styled from "styled-components";
+import Background from "./components/Background";
 
-function App() {
+
+
+export default function App() {
   return (
-    
+    <Wrapper className="App">
+      
     <BrowserRouter>
     <NavBar/>
+    <Background />
+
       <div>
       <Routes>
         <Route element={<Home/>} path="/" exact/>
@@ -24,7 +31,15 @@ function App() {
       </Routes>
       </div>
     </BrowserRouter>
+    </Wrapper>
   );
 }
 
-export default App;
+const Wrapper = styled.div`
+  position: relative;
+  background: #1f1144;
+
+  canvas{
+    height:500px;
+  }
+`;
