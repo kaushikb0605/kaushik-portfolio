@@ -7,6 +7,7 @@ import SinglePost from './components/SinglePost';
 import Post from './components/Post';
 import Project from  './components/Project' ;
 import NavBar from './components/NavBar';
+import ComingSoon from './components/ComingSoon';
 
 import styled from "styled-components";
 import Background from "./components/Background";
@@ -21,15 +22,16 @@ export default function App() {
     <NavBar/>
     <Background />
 
-      <div>
+      <>
       <Routes>
         <Route element={<Home/>} path="/" exact/>
         <Route element={<About/>} path="/about"/>
         <Route element={<SinglePost/>} path="/post/:slug"/>
         <Route element={<Post/>} path="/post"/>
+        <Route element={<ComingSoon/>} path="/coming-soon"/>
         <Route element={<Project/>} path="/project"/>
       </Routes>
-      </div>
+      </>
     </BrowserRouter>
     </Wrapper>
   );
