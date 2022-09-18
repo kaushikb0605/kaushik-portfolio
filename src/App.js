@@ -11,6 +11,9 @@ import ComingSoon from './components/ComingSoon';
 
 import styled from "styled-components";
 import Background from "./components/Background";
+import Photos from './components/Photos';
+import Places from './components/Places';
+import Food from './components/Food';
 
 
 
@@ -29,6 +32,9 @@ export default function App() {
         <Route element={<SinglePost/>} path="/post/:slug"/>
         <Route element={<Post/>} path="/post"/>
         <Route element={<ComingSoon/>} path="/coming-soon"/>
+        <Route element={<Photos />} path="/photos"/>
+        <Route element={<Places />} path="/places"/>
+        <Route element={<Food />} path="/foot"/>
         <Route element={<Project/>} path="/project"/>
       </Routes>
       </>
