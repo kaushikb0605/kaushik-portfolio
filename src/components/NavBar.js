@@ -14,7 +14,7 @@ const NavBar = () => {
                 className="inline-flex items-center py-6 px-2 mr-4 text-red-800 hover:text-pink-800 text-xl font-bold cursive tracking-widest nav-home-name">
                 Kaushik</NavLink>
                   <NavLink exact to="/post" className=" inline-flex items-center py-3 px-3 my-6 rounded text-white hover:text-yellow-800" activeClassName="text-pink-700">Blog Posts📝</NavLink>
-                  <NavLink exact to="/coming-soon" className=" inline-flex items-center py-3 px-3 my-6 rounded text-white hover:text-pink-800" activeclassName="text-red-100 bg-red-700">Projects💥</NavLink>
+                  <NavLink exact to="/project" className=" inline-flex items-center py-3 px-3 my-6 rounded text-white hover:text-pink-800" activeclassName="text-red-100 bg-red-700">Projects💥</NavLink>
                   <NavLink exact to="/photos" className=" inline-flex items-center py-3 px-3 my-6 rounded text-white hover:text-pink-800" activeclassName="text-red-100 bg-red-700">Photos📷</NavLink>
                   <NavLink exact to="/places" className=" inline-flex items-center py-3 px-3 my-6 rounded text-white hover:text-pink-800" activeclassName="text-red-100 bg-red-700">Places🎪</NavLink>
                   <NavLink exact to="/food" className=" inline-flex items-center py-3 px-3 my-6 rounded text-white hover:text-pink-800" activeclassName="text-red-100 bg-red-700">Food🎂</NavLink>

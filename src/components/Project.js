@@ -1,5 +1,6 @@
 import React,{useState,useEffect} from 'react'
 import client from '../client.js';
+import ComingSoon from './ComingSoon.js';
 
 const Project = () => {
   const [projectData, setProject] = useState(null);
@@ -15,8 +16,10 @@ const Project = () => {
     }`).then((data) => setProject(data)).catch(console.error);
   }, []);
   return (
+    <>
+      <ComingSoon/>
     <main className='bg-green-100 min-h-screen p-12'>
-      <section className='container mx-auto'>
+      <section className='container mx-auto bg-violet-600'>
         <h1 className='text-5xl flex justify-center cursive'>My projects</h1>
         <h2 className='text-lg text-gray-600 flex justify-center mb-12'>Welcome to my projects page!</h2>
         <section className='grid grid-cols-2 gap-8'>
@@ -36,10 +39,10 @@ const Project = () => {
                 <strong className='font-bold'>Finished on</strong>:{" "}
                 {new Date(project.date).toLocaleDateString()}
               </span>
-              <span>
+              {/* <span>
                 <strong className='font-bold'>Company</strong>:{" "}
                 {project.place}
-              </span>
+              </span> */}
               <span>
                 <strong className='font-bold'>Type</strong>:{" "}
                 {project.projectType}
@@ -63,6 +66,7 @@ const Project = () => {
         </section>
       </section>
     </main>
+    </>
   )
 }
 

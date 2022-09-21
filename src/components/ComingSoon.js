@@ -17,7 +17,7 @@ const ComingSoon = () => {
     </CanvasContainer>
     <div className='relative'>
     <TopSection logo="Coming Soon" 
-        slogan="As you know, we shouldn't rush good things, so I am taking my time to build this page. It will be up soon with some awesome projects!"
+        slogan="As you know, we shouldn't rush good things, so I am taking my time to build this page. It will be up soon with a few more awesome projects!"
     color="white" />
     </div>
     </>
