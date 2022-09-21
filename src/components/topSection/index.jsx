@@ -9,7 +9,7 @@ const TopSection = (props) => {
                 {props.slogan}
             </Slogan>
             <Paragraph>
-                Till then try rotating and zooming into the Earth and stars maybe?🤔
+                Till then check this out ↙, and rotate the earth too ;-)
             </Paragraph>
     </TopSectionContainer>
   )
@@ -30,7 +30,7 @@ const TopSectionContainer=styled.div`
 
   const Logo=styled.h1`
     margin:0;
-    color:#ffffff;
+    color:yellow;
     font-weight:700;
     font-size:60px;
   `;

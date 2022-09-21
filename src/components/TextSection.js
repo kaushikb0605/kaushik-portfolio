@@ -8,7 +8,8 @@ export default function TextSection() {
       <Description>
         Welcome to my digital world. I am a frontend developer and a tech enthusiast. I love to build things and solve problems. I am currently working as a software developer at <a href="https://www.anchanto.com/" target="_blank" rel="noopener noreferrer"><span className='bg-blue-600'>Anchanto</span></a>.
         <br/>
-        Check this out!👇
+
+        <div className="px-5">Try to rotate the cube!👇</div>
       </Description>
     </Wrapper>
   );
