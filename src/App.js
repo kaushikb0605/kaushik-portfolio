@@ -11,9 +11,8 @@ import ComingSoon from './components/ComingSoon';
 
 import styled from "styled-components";
 import Background from "./components/Background";
-import Photos from './components/Photos';
 import Places from './components/Places';
-import Food from './components/Food';
+// import Food from './components/Food';
 
 
 
@@ -32,9 +31,8 @@ export default function App() {
         <Route element={<SinglePost/>} path="/post/:slug"/>
         <Route element={<Post/>} path="/post"/>
         <Route element={<ComingSoon/>} path="/coming-soon"/>
-        <Route element={<Photos />} path="/photos"/>
         <Route element={<Places />} path="/places"/>
-        <Route element={<Food />} path="/foot"/>
+        {/* <Route element={<Food />} path="/food"/> */}
         <Route element={<Project/>} path="/project"/>
       </Routes>
       </>
@@ -49,5 +47,8 @@ const Wrapper = styled.div`
 
   canvas{
     height:500px;
+  }
+  canvas2{
+    height:1000px;
   }
 `;

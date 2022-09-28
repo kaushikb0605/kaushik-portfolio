@@ -7,6 +7,28 @@
   font-weight: 700;
 }
 
+.product-card{
+  cursor: pointer;
+   transform: scale(1, 1);
+   transition: transform 0.5s ease;
+  color: #324d67;
+ 
+ }
+ .product-card:hover{
+   transform: scale(1.1,1.1)
+ }
+
+ .product-image{
+  border-radius: 15px;
+ background-color: #ebebeb;
+  transform: scale(1, 1);
+  transition: transform 0.5s ease;
+}
+
+.product-name{
+  font-weight: 500;
+}
+
 .prose img{
   margin-left: auto;
   margin-right: auto;
@@ -31,6 +53,18 @@
 .App {
   font-family: sans-serif;
   text-align: center;
+}
+
+.first-text{
+  background-color: violet;
+}
+
+.next-text{
+  margin-top: 40px;
+}
+
+main{
+  margin-bottom:0
 }
 
 * {
