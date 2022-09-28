@@ -2,22 +2,22 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { SocialIcon } from 'react-social-icons';
 import leetcode from '../images/leetcode_logo_icon_145113.svg';
+// import Back from './Back'
 
 const NavBar = () => {
-
   return (
     <header className='bg-violet-600'>
         <div className='container mx-auto flex justify-between'>
             <nav className='flex font-medium'>
+               {/* <Back /> */}
                 <NavLink to="/" exact 
                 activeClassName="text-red-100 bg-red-700"
                 className="inline-flex items-center py-6 px-2 mr-4 text-red-800 hover:text-pink-800 text-xl font-bold cursive tracking-widest nav-home-name">
                 Kaushik</NavLink>
-                  <NavLink exact to="/post" className=" inline-flex items-center py-3 px-3 my-6 rounded text-white hover:text-yellow-800" activeClassName="text-pink-700">Blog Posts📝</NavLink>
+                  <NavLink exact to="/post" className=" inline-flex items-center py-3 px-3 my-6 rounded text-white hover:text-yellow-800" activeClassName="text-pink-700">Posts/Quotes📝</NavLink>
                   <NavLink exact to="/project" className=" inline-flex items-center py-3 px-3 my-6 rounded text-white hover:text-pink-800" activeclassName="text-red-100 bg-red-700">Projects💥</NavLink>
-                  <NavLink exact to="/photos" className=" inline-flex items-center py-3 px-3 my-6 rounded text-white hover:text-pink-800" activeclassName="text-red-100 bg-red-700">Photos📷</NavLink>
                   <NavLink exact to="/places" className=" inline-flex items-center py-3 px-3 my-6 rounded text-white hover:text-pink-800" activeclassName="text-red-100 bg-red-700">Places🎪</NavLink>
-                  <NavLink exact to="/food" className=" inline-flex items-center py-3 px-3 my-6 rounded text-white hover:text-pink-800" activeclassName="text-red-100 bg-red-700">Food🎂</NavLink>
+                  {/* <NavLink exact to="/food" className=" inline-flex items-center py-3 px-3 my-6 rounded text-white hover:text-pink-800" activeclassName="text-red-100 bg-red-700">Food🎂</NavLink> */}
                   <NavLink exact to="/about" className=" inline-flex items-center py-3 px-3 my-6 rounded text-white hover:text-orange-800" activeclassName="text-red-100 bg-red-700">About Me!!👔</NavLink>
                 
             </nav>

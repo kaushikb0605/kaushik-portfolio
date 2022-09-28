@@ -9,7 +9,7 @@ const TopSection = (props) => {
                 {props.slogan}
             </Slogan>
             <Paragraph>
-                Till then check this out ↙, and rotate the earth too ;-)
+                Till then check this out ↙, and have fun with the 3D Earth above too ;-)
             </Paragraph>
     </TopSectionContainer>
   )
