@@ -6,6 +6,12 @@ import Sphere from './AnimatedSphere';
 import { OrbitControls } from '@react-three/drei';
 
 const Home = () => {
+
+  var alerted = localStorage.getItem('alerted') || '';
+        if (alerted !== 'yes') {
+         alert("Thanks for visiting this site. Please use a larger device for the best viewing experience, while we are work on making this site a bit more mobile responsive");
+         localStorage.setItem('alerted','yes');
+        }
   return (
     <main>
     <div className='flex flex-col justify-start grid grid-cols-1 divide-y'>
