@@ -9,7 +9,7 @@ const Home = () => {
 
   var alerted = localStorage.getItem('alerted') || '';
         if (alerted !== 'yes') {
-         alert("Thanks for visiting this site. Please use a larger device for the best viewing experience, while we are work on making this site a bit more mobile responsive");
+         alert("Thanks for visiting this site. Please use a larger device for the best viewing experience, while we work on making this site a bit more mobile responsive");
          localStorage.setItem('alerted','yes');
         }
   return (
