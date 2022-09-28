@@ -34,9 +34,9 @@ const Wrapper = styled.div`
   text-align: center;
   margin: 0 auto;
   padding: 140px 20px 100px;
-  position: absolute;
+  ${'' /* position: absolute; */}
   top: 300px;
-  left:600px
+  ${'' /* left:600px */}
 `;
 
 const Title = styled.h1`
